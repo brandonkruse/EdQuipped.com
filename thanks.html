@@ -4,7 +4,7 @@
 	<head>
 	
 		<meta charset="utf-8" />
-		<title>EdQuipped - Content Management</title>
+		<title>EdQuipped - Thanks!</title>
 	
 		<meta name="keywords" content="EdQuipped" />
 		<meta name="description" content="EdQuipped" />
@@ -32,10 +32,36 @@
 				$('#sub-top-overlay h1').addClass('animated fadeInRight');
 			});
 		</script>
+        
+		<script type="text/javascript"
+		    src="http://maps.googleapis.com/maps/api/js?sensor=false">
+		</script>
+		
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(34.779820, -86.710111);
+				var myOptions = {
+					zoom: 13,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					mapTypeControl: false,
+					panControl: false,
+					streetViewControl: false,					
+					zoomControl: false,
+					
+					scaleControl: true,
+					scaleControlOptions: {
+					    position: google.maps.ControlPosition.BOTTOM_LEFT
+					}
+				};
+			    var map = new google.maps.Map(document.getElementById("map_canvas"),
+			        myOptions);
+			}
+		</script>
 
 	</head>
 	
-	<body>
+	<body onload="initialize()">
 		
 		<div id="main-container">
 			
@@ -54,14 +80,14 @@
 									<li><a href="index.html"> Home </a></li>
 									<li><a href="about.html"> About Us </a></li>
 									<li>
-										<a href="#" class="active"> Services </a>
+										<a href="#"> Services </a>
 										<ul class="sub_menu">
 											<li><a href="consulting.html">Consulting</a></li>
 											<li><a href="infrastructure.html">Infrastructure</a></li>
 											<li><a href="communications.html">Communications</a></li>
 										</ul>
 									</li>
-									<li><a href="contact.html"> Contact </a></li>
+									<li><a href="contact.html" class="active"> Contact </a></li>
 							</ul>
 							
 							<div id="mobile-nav"></div>
@@ -72,13 +98,18 @@
 				
 			</header>
 					
-			<section id="sub-top-half">
+			<section id="contact-top-half">
+                
+                <div id="map_container">
+                    <div id="map_canvas"></div>
+                    <div id="mask"></div>
+                </div>
 				
 				<div class="site-container">
 					
 					<div id="sub-top-overlay">
 						
-						<h1>Content Management</h1>
+						<h1>Success!</h1>
 						
 					</div>
 				
@@ -92,10 +123,10 @@
 				
 				<div class="site-container">
                     
-                    <h2 class="section-title">Digital Curriculum Vendor Management</h2>
+                    <h2 class="section-title">Inquiry was sent successfully!</h2>
                     
-                    <p>Picking your digital curriculum vendor is only half the battle.  Who is going to make sure your digital curriculum provider's platform works with the your devices?  Who will ensure the network management and the content management are seamless?  Who do you call when you're not sure if you have a software issue or a hardware issue...EDquipped!  We can help you select your digital curriculum vendor, but then also provide you with one point of contact for all of your digital needs.  You won't have to worry about dealing with vendor relations.  We will do that for you and ensure that your digital curriculum is seamless integrated on your technology infrastructure.</p>
-                       
+                    <h1>Thank you for your inquiry, expect to hear back from us shortly.</h1>
+                    
 				</div>
 				
 			</section>

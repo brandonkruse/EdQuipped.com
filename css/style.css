@@ -300,7 +300,7 @@ header {
     font-size: 76px;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 1px 2px #7c7c7c;
+    text-shadow: 2px 2px #686868;
     line-height: 84px;
     letter-spacing: 2px;
     font-weight: 600;
@@ -418,13 +418,13 @@ header {
 }
 
 #info-section p {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
-    color: #97a3af;
+    color: #7d858e;
     font-family: 'Signika', sans-serif;
     font-weight: 100;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 29px;
     margin: 0px 0px 0px 0px;
     text-align: left;
     width: 100%;
@@ -490,6 +490,7 @@ header {
     font-size: 16px;
     margin: 12px 0px 4px 0px;
     text-align: center;
+    text-decoration: none;
 }
 
 #quote {
@@ -574,9 +575,9 @@ header {
 }
 
 #about p {
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     text-decoration: none;
-    color: #797979;
+    color: #606060;
     font-family: 'Signika', sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -617,7 +618,7 @@ header {
 .right {
     width: 720px;
     float: left;
-    margin: 0px 0px 0px 25px; 
+    margin: 40px 0px 0px 25px; 
 }
 
 #map_container {
